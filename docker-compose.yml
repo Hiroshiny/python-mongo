@@ -8,8 +8,8 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=guilhermemorei
-      - MONGO_INITDB_ROOT_PASSWORD=aluno
+      MONGO_INITDB_ROOT_USERNAME: guilhermemorei
+      MONGO_INITDB_ROOT_PASSWORD: aluno
     volumes:
       - mongodb_data:/data/db
       - mongodb_data:/data/configdb
